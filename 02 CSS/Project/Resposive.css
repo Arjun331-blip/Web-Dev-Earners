@@ -1,0 +1,62 @@
+/* small laptops 768px to 991px*/
+@media (max-width: 991px) {
+    header {
+    gap: var(--gap-s);
+    align-items: center;
+  }
+}
+
+/* tablets 576px to 767px*/
+@media (max-width: 767px) {
+  header {
+    gap: var(--gap-s);
+    align-items: center;
+  }
+
+  header h1 {
+    align-self: center;
+  }
+
+  header nav {
+    flex-wrap: nowrap;
+  }
+}
+
+/* mobile screen < 575*/
+@media (max-width: 575px) {
+
+  header {
+    flex-direction: column;
+    gap: var(--gap-s);
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: clamp(var(--font-size-m), 5vw, 2rem);
+  }
+
+  nav {
+    gap: var(--gap-s);
+    flex-wrap: wrap;
+  }
+
+  header nav ul {
+    gap: var(--gap-xs);
+    /* flex-wrap: wrap; */
+  }
+
+  header nav a {
+    padding: var(--padding-xs);
+    font-size: clamp(0.5rem, 5vw, 1rem);
+  }
+
+  header nav div {
+    padding: var(--padding-xs);
+    text-align: center;
+  }
+
+  footer {
+    gap: var(--gap-xs);
+    margin: 0px;
+  }
+}

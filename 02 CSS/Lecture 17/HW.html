@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+      }
+
+      .grid-container {
+        display: grid;
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        
+      }
+
+      .grid-items {
+        background-color: antiquewhite;
+      }
+
+      .grid-item1 {
+        grid-column: 2/4;
+        background-color: rgb(58, 210, 58);
+      }
+
+      .grid-item3 {
+        grid-row: 1/4;
+        background-color: rgb(58, 210, 58);
+      }
+
+      .grid-item6 {
+        grid-row: 2/4;
+        grid-column: 4/5;
+        background-color: rgb(58, 210, 58);
+      }
+
+      .grid-item4,
+      .grid-item8 {
+        background-color: rgb(233, 233, 27);
+      }
+
+      .grid-item2,
+      .grid-item7,
+      .grid-item5 {
+        background-color: rgb(228, 70, 70);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-items grid-item1">item1</div>
+      <div class="grid-items grid-item2">item2</div>
+      <div class="grid-items grid-item3">item3</div>
+      <div class="grid-items grid-item4">item4</div>
+      <div class="grid-items grid-item5">item5</div>
+      <div class="grid-items grid-item6">item6</div>
+      <div class="grid-items grid-item7">item7</div>
+      <div class="grid-items grid-item8">item8</div>
+    </div>
+  </body>
+</html>

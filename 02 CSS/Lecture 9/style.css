@@ -1,0 +1,16 @@
+/* inline CSS */
+/* internal CSS */
+/* external CSS */
+
+/* Element tag with select in css */
+/* Combinators selector --> li, td */
+/* class selector --> .hello */
+/* id selector ==> #hello */
+/* universal selector ==> * entire your webpage */
+/* specificity ==> inline > id > class > element > universal */
+/* Descendant Combinator ==> div p */
+
+
+#SSs {
+    color: rgb(240, 48, 240);
+}

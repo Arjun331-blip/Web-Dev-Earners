@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    border: 2px solid green;
+    width: 800px;
+    height: 50px;
+}
+
+span {
+    display: inline-block;
+    border: 2px solid blue;
+    width: 800px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+p{
+    /* display: none; */
+    /* visibility: hidden; */
+}
+input {
+    padding: 10px;
+    margin: 10px;
+}

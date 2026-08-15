@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>types of CSS</title>
+    <link rel="stylesheet" href="type.css" />
+    <!-- internal css -->
+    <style>
+      h1 {
+        background-color: antiquewhite;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline css  -->
+    <!-- priority of type of css inline > id > class > elemen > universal -->
+    <h1 style="background-color: red; font-size: 16px">
+      hi guys you are happy to all of you
+    </h1>
+    <p class="para1">paragraph 1</p>
+    <p class="para2">paragraph 2</p>
+    <p class="para3">paragraph 3</p>
+    <p class="para4">paragraph 4</p>
+    <p class="para5">paragraph 5</p>
+    <div>
+      <h2>hi guys how are you</h2>
+      <h2>hi guys how are you</h2>
+      <h2>hi guys how are you</h2>
+    </div>
+
+    <a href="https://google.com" class="myLink">visit Website</a> <br /><br />
+    <input type="text" name="" id="myInput" placeholder="enter your name" />
+    <button type="submit" id="myButton">submit</button>
+    <canvas id="mycanvas" width="100px" height="100px"></canvas>
+
+    <p class="selectable-text">
+      Mera text select karke dekho, iska color alag hoga!
+    </p>
+
+    <ul class="custom-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <h2 class="dynamic-title">Web Development</h2>
+    <button class="cart-btn">Add to Cart</button>
+
+    <br /><br />
+
+    <!-- <dialog id="myDialog">
+      <h3>Hello! Main Pop-up Hoon</h3>
+      <p>Peeche ki screen (backdrop) ka color badal gaya hai.</p>
+      <button onclick="document.getElementById('myDialog').close()">
+        Close
+      </button>
+    </dialog>
+
+    <button onclick="document.getElementById('myDialog').showModal()">
+      Open Dialog Modal
+    </button> -->
+
+    <dialog id="myDialogModal">
+        <h2>Greting I am dialog </h2>
+        <p>Hii guys how are. i hope you are happy to all </p>
+        <button onclick="document.getElementById('myDialogModal').close()">Close</button>
+    </dialog>
+
+    <button onclick="document.getElementById('myDialogModal').showModal()">
+        Open Dialog Box Modal
+    </button>
+    <script>
+      let c = document.getElementById("mycanvas");
+      let ctx = c.getContext;
+      console.log(ctx);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+/* h1 {
+    color: aliceblue;
+}
+    
+*/
+
+/* Css combinator */
+/* Descendent combinator */
+/* div h2 {
+    color: blueviolet;
+} */
+
+/* child combinator */
+/* div > h2 {
+    font-size: 40px;
+} */
+
+/* next sibling selector */
+.para1 + .para2 {
+    color: rgb(92, 207, 92);
+}
+
+/* subsequence sibling combinator */
+ .para1 ~.para1 {
+    background-color: brown;
+ }
+
+.myLink:link {
+    color: #cc1800;
+    text-decoration: underline;
+}
+
+.myLink:visited{
+    color: #1a8b62;
+}
+
+/* #myButton:hover, .myLink:hover {
+    color: white;
+    background-color: #2ecc71; 
+    cursor: pointer;
+} */
+
+#myButton:active {
+    background-color: #27ae60; /* Darker green */
+    transform: scale(1.5);
+}
+
+#myInput:focus{
+    border: 1px solid #3498db; /* Blue border dikhega */
+  background-color: #e8f4f8; /* Light blue background */
+  outline: none;
+  transform: scale(1.05);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+div:first-child {
+    color: rgb(81, 222, 38);
+}
+div:last-child {
+    color: rgb(81, 222, 38);
+}
+
+div:nth-child(1){
+    color: rgb(128, 128, 128);
+}
+
+.p1::first-line {
+    background-color: #27ae60;
+    color: red;
+}
+
+.p1::first-letter {
+    font-size: 40px;
+}
+
+/* h2::selection {
+    color: brown;
+    font-size: 70px;
+    background-color: blue;
+} */
+
+h2::marker {
+    background-color: yellow;
+}
+
+canvas {
+    border: 2px solid black;
+}
+
+.selectable-text::selection {
+  background-color: #ff007f; /* Bright pink */
+  color: white;
+}
+
+.custom-list li::marker {
+  color: #e74c3c; /* Bullets red ho jayenge */
+  font-size: 1.5rem;
+  content: "⚡ "; /* Bullet ki jagah emoji lagane ke liye */
+}
+
+.dynamic-title::before {
+  content: "🔥 "; /* Heading se theek pehle emoji aayega */
+}
+
+.cart-btn::after {
+  content: " 🛒";
+  font-size: 24px; /* Button ke text ke baad cart ka emoji */
+}
+
+.cart-btn {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 24px;
+}
+
+#myDialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7); /* Peeche ka area dark ho jayega */
+  backdrop-filter: blur(5px); /* Peeche ka content blur karne ke liye */
+}
+
+dialog {
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}

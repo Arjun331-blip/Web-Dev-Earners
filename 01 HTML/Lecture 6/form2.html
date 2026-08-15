@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Services Login</title>
+</head>
+<body style="width: 40%;">
+    
+    <div >
+        <h2>Novell Services Login</h2>
+        <form action="">
+            <label for="usename">Username: </label>
+            <input type="text" name="usename" id="usename">
+            <br>
+            <label for="password">Password: </label>
+            <input type="text" name="password" id="password">
+            <br>
+            <label for="city">City of: </label>
+            <input type="text" name="city" id="city">
+            <br>
+            <label for="webServer">Web Sever: </label>
+            <select name="webServer" id="webServer">
+                <option value="Node.js">Node.js</option>
+                <option selected value="">--Choose a server--</option>
+                <option value="express.js">Express.js</option>
+            </select>
+            <br><br>
+            
+            <div style="display: flex;">
+            <label for="admin">Please specify your role: </label>
+            <div>
+            <input type="radio" name="role" id="admin">
+            <label for="">Admin</label>
+            <br>
+            <input type="radio" name="role" id="engineer">
+            <label for="engineer">Engineer</label>
+            <br>
+            <input type="radio" name="role" id="manager">
+            <label for="manager">Maneager</label>
+            <br>
+            <input type="radio" name="role" id="Guest">
+            <label for="Guest">Guest</label>
+            </div>
+            </div>
+
+            <br><br>
+
+            <div style="display: flex;">
+            <label for="sign-on">Single Sign-on to the following: </label>
+            <div>
+            <input type="checkbox" name="sign-on" id="mail">
+            <label for="mail">Mail</label>
+            <br>
+            <input type="checkbox" name="sign-on" id="payroll">
+            <label for="payroll">Payroll</label>
+            <br>
+            <input type="checkbox" name="sign-on" id="self">
+            <label for="self">Self-service</label>
+            </div>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

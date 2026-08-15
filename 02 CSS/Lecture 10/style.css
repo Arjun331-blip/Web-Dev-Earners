@@ -1,0 +1,39 @@
+body {
+}
+
+p.para3 {
+    font-family: "ubuntu", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+    font-variant: normal;
+    line-height: 30px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+p.para2 {
+    text-align: center;
+    border: 1px solid black;
+}
+
+span {
+    display: block;
+    /* text-align: center; */
+    text-decoration: underline dashed 1px;
+    text-transform: uppercase;
+    text-indent: 50px;
+    text-shadow: 3px 5px 2px red;
+}
+
+p.para1 {
+}
+
+h1 {
+    /* color: rgb(165, 31, 31); */
+    /* color: #00ff00; */
+
+    /* color: hsl(350, 100%, 80%); */
+    color: hsl(350, 100%, 80%, 0.5);
+    background-color: black;
+}

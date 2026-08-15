@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text, font, and color in css</title>
+    <link href="prac.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem culpa
+      nisi ullam maiores tempore magnam tenetur praesentium sint ab rerum atque
+      repellendus exercitationem, similique ipsa, quia mollitia libero voluptate
+      harum! Dolores nam earum quod voluptatibus autem, quae ipsa excepturi
+      accusamus facilis officia a, sit quaerat est fugit cumque dolore ipsam
+      nisi sed numquam cum ad expedita id ut. Ipsa, in. Minima doloremque quidem
+      laboriosam ipsa cum quo rerum, temporibus tempore velit blanditiis,
+      accusantium a possimus facere ipsam quaerat expedita harum ratione quia
+      vitae nisi itaque perspiciatis mollitia. Necessitatibus, eos inventore.
+      <img src="class 2.png" alt="" />
+    </p>
+
+    <div class="container">
+      <div class="colorPalete"></div>
+      <div class="range">
+        <div>
+          <label for="">RED</label>
+          <input type="range" name="" id="range1" min="0" max="255" />
+          <span class="span1">0</span>
+        </div>
+        <div>
+          <label for="">GREEN</label>
+          <input type="range" name="" id="range2" min="0" max="255" />
+          <span class="span2">0</span>
+        </div>
+        <div>
+          <label for="">BLUE</label>
+          <input type="range" name="" id="range3" min="0" max="255" />
+          <span class="span3">0</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let rang1 = document.querySelector("#range1").value;
+      let rang2 = document.querySelector("#range2").value;
+      let rang3 = document.querySelector("#range3").value;
+      console.log(range1, range2, range3)
+
+      let span1 = document.querySelector(".span1");
+      let span2 = document.querySelector(".span2");
+      let span3 = document.querySelector(".span3");
+        
+      span1.textContent = range1;
+      span2.textContent = range1;
+      span3.textContent = range1;
+      
+    </script>
+  </body>
+</html>
